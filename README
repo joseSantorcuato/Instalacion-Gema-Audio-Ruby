@@ -20,7 +20,7 @@ Ingresa a descargas:
 
 cd Descargas
 
-tar libsndfile-1.0.27.tar.gz
+tar -zxvf libsndfile-1.0.27.tar.gz
 
 cd libsndfile-1.0.27
 
