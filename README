@@ -1,0 +1,46 @@
+INSTALACIÓN DE GEMA AUDIO-RUBY 2.4.0
+José Santorcuato Tapia
+santorcuato76@gmail.com
+CHILE 2017
+
+
+Una vez instalado Ruby en su versión 2.4 podremos instalar gemas o librerías, ya había instalado la gema mysql2 para base datos, toca ahora la librería gem 'ruby-audio', '~> 1.6', '>= 1.6.1'
+
+Para eso escribiré en la terminal lo siguiente:
+
+gem install ruby-audio
+
+Arrojará muchos errores debido a la dependencia de la librería libsndfile-1.0.27 es la que no ermite la instalación de la gema.
+
+Descarga la librería:
+
+ ftp://ftp.oregonstate.edu/.2/lfs-website/blfs/view/svn/multimedia/libsndfile.html
+
+Ingresa a descargas:
+
+cd Descargas
+
+tar libsndfile-1.0.27.tar.gz
+
+cd libsndfile-1.0.27
+
+./configure
+
+make
+
+ahora como root:
+
+make install
+
+Abre otra termna y escribe:
+
+gem install ruby-audio
+
+Building native extensions.  This could take a while...
+Successfully installed ruby-audio-1.6.1
+Parsing documentation for ruby-audio-1.6.1
+Installing ri documentation for ruby-audio-1.6.1
+Done installing documentation for ruby-audio after 1 seconds
+1 gem installed
+
+Listo, gema ok!
